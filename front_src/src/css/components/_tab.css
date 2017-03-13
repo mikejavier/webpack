@@ -1,0 +1,94 @@
+[data-tab-on="1"] > [data-tab-content]:nth-of-type(1){
+	display: block;
+}
+[data-tab-on="2"] > [data-tab-content]:nth-of-type(2){
+	display: block;
+}
+[data-tab-on="3"] > [data-tab-content]:nth-of-type(3){
+	display: block;
+}
+
+
+// sistema de tab antigo que tem que ser revisto
+.tab{}
+
+.tab[data-tab-on="1"]{
+
+	.tab__content:nth-of-type(1){
+		display: block;
+	}
+}
+.tab[data-tab-on="2"]{
+
+	.tab__content:nth-of-type(2){
+		display: block;
+	}
+}
+.tab[data-tab-on="3"]{
+
+	.tab__content:nth-of-type(3){
+		display: block;
+	}
+}
+.tab[data-tab-on="4"]{
+
+	.tab__content:nth-of-type(4){
+		display: block;
+	}
+}
+
+
+.tab__nav{
+	border-top: 1px $color-grey solid;
+	border-bottom: 1px $color-grey solid;
+	margin-bottom: 20px;
+	font-size: 1.1em;
+	lost-flex-container:row;
+	justify-content:space-between;
+	align-items:center;
+}
+.tab__nav--center{
+	justify-content:center;
+
+	.tab__nav__item{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+
+
+.tab__nav__item{
+	color: $scooter;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+.tab__nav__item--active{
+	color: $jagger;
+	position: relative;
+
+	&:after{
+		content:'';
+		display:inline-block;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform:translatex(-50%);
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 10px 12px 10px;
+		border-color: transparent transparent $jagger transparent;
+	}
+}
+.tab__nav__item strong{
+	text-transform: uppercase;
+}
+
+.tab__content{
+	display: none;
+}
+
+
+
+

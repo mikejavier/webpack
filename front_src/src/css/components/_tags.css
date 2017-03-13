@@ -1,0 +1,37 @@
+.system__tags{}
+.system__tags--pink{
+
+	.system__tags__title{
+		color: #cf5776;
+	}
+
+	.system__tags__list__item{
+		background-color: #ffa1b9;
+
+		a{
+			color: #CF5776;
+		}
+	}
+}
+.system__tags__title{
+	color: $color-white;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+.system__tags__list{
+	width: 100%;
+	lost-flex-container:row;
+	justify-content:center;
+}
+.system__tags__list__item{
+	background-color: #c58ed4;
+	padding: .5rem 1rem;
+	margin: .5rem;
+	display: inline-block;
+	border-radius: 15px;
+
+	a{
+		color: $jagger;	
+	}
+}

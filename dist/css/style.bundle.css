@@ -1,5 +1,270 @@
-.teste{
-    background-color: #000;
+/*// images*/
+
+/*// colors*/
+
+/*// font*/
+
+/*// Margin and Padding*/
+
+/*// BreakPoints*/
+
+/*// Border*/
+
+/* block the body scrool on active modal/ tabs */
+body.overflow-block {
+    overflow: hidden !important;
 }
 
-/*# sourceMappingURL=style.bundle.css.map*/
+/* INSERT HERE THE EXTEND CLASS */
+
+/*// Form control focus state*/
+
+/*//*/
+
+/*// Generate a customized focus state and for any input with the specified color,*/
+
+/*// which defaults to the `$input-border-focus` variable.*/
+
+/*//*/
+
+/*// We highly encourage you to not customize the default value, but instead use*/
+
+/*// this to tweak colors on an as-needed basis. This aesthetic change is based on*/
+
+/*// WebKit's default styles, but applicable to a wider range of browsers. Its*/
+
+/*// usability and accessibility should be taken into account with any change.*/
+
+/*//*/
+
+/*// Example usage: change the default blue border and shadow to white for better*/
+
+/*// contrast against a dark gray background.*/
+
+/*// Placeholder text*/
+
+/*Reset and dependencies*/
+/*@import "core/fonts";*/
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    height: 100%;
+
+    /*
+    *
+    * Conserta o bug da tela pulante do Safari Mobile
+    *
+    */
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+
+    /*lost-utility:edit;*/
+}
+body {
+    font-family: 'Dosis',sans-serif;
+    height: 100% !important;
+    background-color: #FAFAFA;
+    font-size: 16px;
+    font-size: 1.6rem;
+
+    /*
+    *
+    * Conserta o bug da tela pulante do Safari Mobile
+    *
+    */
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+button, a {
+    text-decoration: none;
+    outline: none;
+}
+p {
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.wrap {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    padding: 1rem;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.hidden-desktop {}
+@media (min-width: 920px) {
+    .hidden-desktop {
+        display: none !important;
+    }
+}
+.hidden-mobile {
+    display: none !important;
+}
+@media (min-width: 920px) {
+    .hidden-mobile {
+        display: block !important;
+    }
+}
+.owl-controls {
+    top: 97%;
+}
+.owl-controls .owl-dot span {
+    width: 14px !important;
+    height: 14px !important;
+}
+.owl-controls .owl-dot:hover span, .owl-controls .active span {
+    background-color: #38CACF !important;
+}
+@media (min-width: 960px) {
+    .owl-controls {
+        top: 94%;
+    }
+}
+[data-form-toggle="gravida"] {
+    display: none;
+}
+.plus-icon {
+    background-color: #89d041;
+    color: #fff;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 6px;
+    vertical-align: top;
+    margin-top: 5px;
+}
+.plus-icon i {
+    font-size: 6px;
+    font-size: .6rem;
+}
+.vehicle-icon {
+    font-size: 30px;
+    font-size: 3rem;
+    display: block;
+}
+.icon-rotate-180 {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+.color-scooter {
+    color: #38CACF;
+}
+.owl-carousel .owl-stage {
+    display: flex;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.owl-carousel .owl-item {
+    float: none;
+}
+.swal2-modal {
+    opacity: .8;
+}
+.swal2-modal h2 {
+    color: #38CACF;
+    font-size: 20px;
+    font-size: 2rem;
+    margin-top: 0;
+}
+.swal2-modal p {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+.swal2-modal button {
+    background-color: #fff !important;
+    border: 1px solid #e3e3e3 !important;
+    border-bottom: 2px solid #c6c6c6 !important;
+    text-transform: lowercase;
+    color: #888 !important;
+}
+
+/*Components*/
+/*@import "components/form";
+@import "components/embed";
+@import "components/title";
+@import "components/historia";
+@import "components/figurinhas";
+@import "components/button";
+@import "components/badge";
+@import "components/slick";
+@import "components/dropdown";
+@import "components/product";
+@import "components/floatingtabs";
+@import "components/tabs/product";
+@import "components/tabs/cart";
+@import "components/amount";
+@import "components/scrollbar";
+@import "components/filter";
+@import "components/tab";
+@import "components/tags";
+@import "components/store";
+@import "components/rating";
+@import "components/ask";
+@import "components/menu";
+@import "components/breadcrumb";
+@import "components/alert";
+@import "components/avatar_selection";
+@import "components/header__dropdown__loggout";
+@import "components/tagging";
+@import "components/error";
+@import "components/table";
+@import "components/text";
+@import "components/tooltip";
+@import "components/status_timeline";
+@import "components/tablink";
+@import "components/loading";
+@import "components/orientation";*/
+
+/*@import "components/buttons";*/
+/*@import "components/progress-bar";
+@import "components/cards";
+@import "components/waves";
+@import "components/timeline";
+@import "components/articles";
+@import "components/dropdown";
+@import "components/labels";
+@import "components/paginator";
+@import "components/tabela";
+@import "components/sprite-generator";
+@import "components/utilidades";*/
+
+/*Pages*/
+/*@import "page/cadastro_criacao";
+@import "page/como_comprar";
+@import "page/como_vender";
+@import "page/landing_poupanca";
+@import "page/sou_lojista";
+@import "page/home";
+@import "page/insidepage";
+@import "page/loja";
+@import "page/produto";
+@import "page/historia";
+@import "page/figura";
+@import "page/mensagens";
+@import "page/edicao";
+@import "page/notification";
+@import "page/poupanca";
+@import "page/landing-larissa";
+
+
+
+@import "template/header";
+@import "template/footer";*/
+
+
+/*@import "backup/style";*/

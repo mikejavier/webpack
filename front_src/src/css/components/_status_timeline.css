@@ -1,0 +1,113 @@
+.status-timeline{
+	margin: 0;
+	width: 100%;
+	lost-flex-container:row;
+	justify-content:space-between;
+}
+.status-timeline__item{
+	width: 20%;
+	flex-grow:1;
+
+	&:first-of-type .status-timeline__item__icon:before{background-color: transparent;}
+	&:last-of-type .status-timeline__item__icon:after{background-color: transparent;}
+}
+.status-timeline__item--active{
+	> .status-timeline__item__label{
+		color: $scooter;
+	}
+
+	> .status-timeline__item__icon > span,
+	> .status-timeline__item__icon:before,
+	> .status-timeline__item__icon:after{
+		background-color: $scooter;
+	}
+
+	&:last-of-type > .status-timeline__item__label{
+		color: $jagger;
+	}
+	> .status-timeline__item__icon .icon-porco{
+		background-color: $jagger;
+	}
+}
+.status-timeline__item--big{
+	lost-flex-container:column;
+	justify-content: space-between;
+
+	> .status-timeline__item__label{
+		margin-bottom: 0;
+		margin-top: 1rem;
+	}
+
+	> .status-timeline__item__icon{
+		background-color: #d7d7d7;
+		border-radius: 25px;
+		text-transform: uppercase;
+
+		a{
+			color: $color-white;
+		}
+
+		&:before,
+		&:after{
+			display: none;
+		}
+	}
+
+	&.status-timeline__item--active > .status-timeline__item__icon{
+		background-color: $scooter;
+	}
+}
+
+.status-timeline__item__label{
+	display: block;
+	text-align: center;
+	max-width: 110px;
+	margin: 0 auto 1rem;
+	color: #bcbcbc;
+	text-transform: uppercase;
+	@media (max-width: 920px){
+		font-size: 9px;
+		max-width: 50px;
+	}
+}
+.status-timeline__item__icon{
+	lost-flex-container:row;
+	align-items:center;
+
+	> span{
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		background-color: #d7d7d7;
+		display: block;
+	}
+
+	.icon-carinha{
+		background-image: url($img-path/minicarinha.png);
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.icon-porco{
+		background-image: url($img-path/miniporco.png);
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	&:before{
+		content: '';
+		display: inline-block;
+		height: 2px;
+		background-color: #d7d7d7;
+		min-width: 10px;
+		flex-grow:1;
+	}
+
+	&:after{
+		content: '';
+		display: inline-block;
+		height: 2px;
+		background-color: #d7d7d7;
+		min-width: 10px;
+		flex-grow:1;
+	}
+}

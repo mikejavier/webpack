@@ -1,0 +1,249 @@
+/*---
+title:   Buttons
+section: Base CSS
+---
+Button styles can be applied to **any** element. Typically you'll want to use
+either a `<button>` or an `<a>` element:
+
+```example:html
+<button class="btn">Click</button>
+<a class="btn" href="/some-page">Some Page</a>
+```
+*/
+
+.btn{
+	display: inline-block;
+	background-color: $color-white;
+	padding: .3rem .8rem;
+	color: $jagger;
+	font-weight: 700;
+	font-size: 1.8rem;
+	border-radius: 6px;
+	border: 1px solid transparent;
+	border-bottom: 4px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+
+	// &:hover{
+	// 	border-bottom-width: 1px;
+	// 	top: 1px;
+	// }
+
+	&:active{
+		border-bottom-width: 1px;
+	 	top: 2px;
+	}
+
+	i{
+		font-size: 1.6rem;
+	}
+
+	&+&{
+		margin-left: 1rem;
+	}
+
+	&__label{
+		display: none;
+		@media (min-width: 920px) {
+			display: inline-block;
+		}
+	}
+}
+.btn-leilao{
+	lost-flex-container:row;
+
+	> img{
+    	align-self: center;
+    	margin-right: 7px;
+	}
+}
+.btn[disabled]{
+	background-color: #D7D7D7 !important;
+	color: #888 !important;
+	border-bottom-color: #c6c6c6 !important;
+	cursor: not-allowed;
+}
+
+.btn--hidden{
+	display: none;
+}
+
+.btn--active{
+	border-bottom-width: 0px;
+	top: 2px;
+}
+
+
+.swal2-modal button,
+.btn--default{
+	min-width: 180px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: #888;
+	border-color: #e3e3e3;
+	border-bottom-color: #c6c6c6;
+}
+
+.btn--orange{
+	background-color: #ff8a00;
+	color: $color-white;
+	border-bottom-color: #c0584a;
+}
+.btn--pink {
+    color: #ff83a3;
+    background-color: #fff;
+    border-color: #bfbfbf;
+    cursor: pointer;
+}
+.btn--pink.btn--active {
+    background-color: #ff83a3;
+    color: #fff;
+    border: 0 !important;
+    cursor: pointer;
+}
+.btn--pink2 {
+    color: #fff;
+    background-color: #ff83a3;
+    border-bottom-color: #c3536e;
+    cursor: pointer;
+}
+.btn--green{
+	background-color: $scooter;
+	color: $color-white;
+	border-bottom-color: #46b1b5;
+	min-width: 180px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+
+    &.top{
+        font-size: 1.6rem;
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+        min-width: 130px;
+    }
+}
+
+.btn--facebook{
+	background-color: #3b65a6;
+	color: $color-white;
+	border-bottom-color: #2d4d7e;
+	min-width: 120px;
+}
+
+.btn--gmail{
+	background-color: #e26046;
+	color: $color-white;
+	border-bottom-color: #ca4c34;
+	min-width: 120px;
+}
+
+.btn--big{
+	min-width: 200px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.btn--block{
+	width: 100%;
+	display: block;
+}
+
+.btn--center{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.btn--right{
+	float: right;
+}
+
+.btn--fechar{
+	position: absolute;
+	cursor: pointer;
+	left: 1rem;
+	top: 1rem;
+	color: #bcbcbc;
+}
+
+.btn--fechar--white{
+	color: #fff;
+}
+
+.btn--icon--pink {
+    color: #ff83a3;
+    border-top: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    padding: 8px 10px;
+    padding: .8rem 1rem;
+    cursor: pointer;
+}
+.btn--icon--pink.btn--active {
+    background-color: #ff83a3;
+    color: #fff;
+    border: 0 !important;
+    cursor: pointer;
+}
+
+.btn--in{
+	position: absolute;
+	top: .5rem;
+	right: .5rem;
+}
+
+.btn--link{
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.2;
+	cursor: pointer;
+}
+
+.btn--link--green{
+	color: $scooter;
+}
+
+.btn--link--block{
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+
+.btn--link--more{
+	border-top: 1px solid #bdbdbd;
+	padding-top: 1rem;
+}
+
+
+.error{
+background: #ffffdd;
+}
+
+
+
+
+
+.btn__label{
+	display: none;
+	@media (min-width:920px) {
+		display: inline-block;
+	}
+}
+
+
+
+
+
+
+.link{
+	color: #888;
+}
+
+.link--password{
+	color: $pink-salmon;
+	font-size: 1.4rem;
+	text-decoration: underline;
+	font-weight: 500;
+}

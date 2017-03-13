@@ -1,0 +1,21 @@
+.tablink{
+	width: 100%;
+	lost-flex-container:row;
+}
+.tablink__item{
+	width: 20%;
+	flex-grow:1;
+	font-size: 1.4rem;
+	color: $jagger;
+	border: 1px solid $jagger;
+	transition:.2s;
+	text-align: center;
+	padding: 1rem;
+	text-transform: uppercase;
+
+	&:hover,
+	&--active{
+		background-color: $jagger;
+		color: $color-white;
+	}
+}

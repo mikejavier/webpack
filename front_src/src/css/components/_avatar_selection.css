@@ -1,0 +1,142 @@
+.avatar__selection{
+	width: 100%;
+	position: relative;
+}
+.avatar__selection--active,
+.avatar__selection--active .avatar__selection__carrosel__image{
+	border-color: $scooter !important;
+}
+.avatar__selection__carrosel{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
+	.owl-item{
+		border-radius: 50%;
+		border: 1px solid transparent;
+	}
+
+	.owl-item:last-of-type .avatar__selection__carrosel__image{
+		overflow: visible;
+	}
+}
+.avatar__selection__carrosel__image{
+	margin: .3rem auto;
+	border: 3px solid #E8E8E8;
+	border-radius: 50%;
+	transition: border .2s;
+	//overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	width: 56px;
+	height: 56px;
+
+	img{
+		display: block;
+		transform-style:initial !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.slim-btn-group{
+		padding: 0;
+		position: static;
+
+		.slim-btn-remove{
+			background: none;
+			font-size: 2rem;
+			position: absolute;
+			top: -5px;
+			left: -20px;
+			width: auto;
+			height: auto;
+			color: #d00058;
+		}
+	}
+}
+
+.avatar__upload__input{
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	border: 3px solid transparent;
+	border-radius: 50%;
+
+	.slim-label{
+		/*content: '';
+		position: absolute;
+		display: block;
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		color: #e7e7e7;
+		text-align: center;
+		font-size: 1.5rem;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%, -50%);
+		font-size: 5rem;
+		line-height: 20px;*/
+		content: '';
+		position: absolute;
+		display: block;
+		width: 22px;
+		height: 35px;
+		border-radius: 50%;
+		color: #e7e7e7;
+		text-align: center;
+		font-size: 15px;
+		font-size: 1.5rem;
+		top: 50%;
+		left: 31%;
+		transform: translate(-50%, -50%);
+		font-size: 50px;
+		font-size: 12px;
+		text-align: center !important;
+		line-height: 20px;
+		color: #888;
+		p {
+			font-size: 12px;
+			margin: 0;
+			position: relative;
+			left: 5px;
+		}
+	}
+}
+
+.avatar__upload__wrap{
+	width: 84px;
+	height: 84px;
+	background-color: #bcbcbc;
+	border-radius: 50%;
+
+	&:after{
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%,-50%);
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+.avatar__selection__nav{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 95%;
+	lost-flex-container:row;
+	justify-content:space-between;
+}
+.avatar__selection__nav__item{
+	color: #888;
+
+	&:first-of-type{
+		transform:rotate(180deg);
+		display: block;
+	}
+}

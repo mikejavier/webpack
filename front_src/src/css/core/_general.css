@@ -1,0 +1,173 @@
+@lost flexbox flex;
+
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	height: 100%;
+
+    /*
+    *
+    * Conserta o bug da tela pulante do Safari Mobile
+    *
+    */
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+	/*lost-utility:edit;*/
+}
+
+body {
+	font-family: $font;
+	height: 100% !important;
+	background-color: #FAFAFA;
+	font-size: 1.6rem;
+
+    /*
+    *
+    * Conserta o bug da tela pulante do Safari Mobile
+    *
+    */
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+button, a{
+	text-decoration: none;
+    outline : none;
+}
+
+
+p{
+	font-size: 1.6rem;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+.wrap{
+	lost-center:1170px;
+	lost-flex-container:row;
+	padding: 1rem;
+}
+
+
+.img-circle{
+	border-radius: 50%;
+}
+
+
+.hidden-desktop{
+	@media (min-width: 920px) {
+		display: none !important;
+	}
+}
+
+.hidden-mobile{
+	display: none !important;
+	@media (min-width: 920px) {
+		display: block !important;
+	}
+}
+
+
+.owl-controls{
+	top: 97%;
+	@media (min-width: 960px) {
+		top: 94%;
+	}
+
+	.owl-dot span{
+		width: 14px !important;
+		height: 14px !important;
+	}
+	.owl-dot:hover span,
+	.active span{background-color: $scooter !important;}
+}
+
+
+
+
+
+
+
+
+
+[data-form-toggle="gravida"]{
+	display: none;
+}
+
+
+.plus-icon{
+	background-color: #89d041;
+	color: $color-white;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 6px;
+	vertical-align: top;
+	margin-top: 5px;
+
+	i{
+		font-size: .6rem;
+	}
+}
+
+.vehicle-icon{
+    font-size: 3rem;
+    display: block;
+}
+
+
+.icon-rotate-180{
+	transform: rotate(180deg);
+	display: inline-block;
+}
+
+
+
+.color-scooter{
+	color: $scooter;
+}
+
+
+
+
+.owl-carousel .owl-stage{
+	lost-flex-container:row;
+	align-items:center;
+}
+.owl-carousel .owl-item{
+	float: none;
+}
+
+
+
+
+
+
+
+.swal2-modal{
+	opacity: .8;
+}
+.swal2-modal h2{
+	color: $scooter;
+	font-size: 2rem;
+	margin-top: 0;
+}
+.swal2-modal p{
+	font-size: 1.4rem;
+}
+.swal2-modal button{
+	background-color: $color-white !important;
+	border: 1px solid #e3e3e3 !important;
+	border-bottom: 2px solid #c6c6c6 !important;
+	text-transform: lowercase;
+	color: #888 !important;
+}

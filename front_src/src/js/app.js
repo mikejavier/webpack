@@ -1,8 +1,8 @@
-// import Teste from './modules/module.js'
+import Teste from './modules/module.js'
 // import style from '../css/app.css'
 
 // const teste = 'a';
-console.log(a);
+// console.log(a);
 console.log(Teste);
 
 // jQuery(document).ready(function($) {

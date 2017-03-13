@@ -1,0 +1,157 @@
+.page{
+	width: 100%;
+}
+
+.page-edit{
+	lost-flex-container:row;
+}
+
+.page-edit__col{
+	width: 100%;
+
+	@media (min-width:920px) {
+		lost-column:1/2;
+	}
+}
+
+.page-edit__section__label{
+	font-size: 2rem;
+	color: #888;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+
+.page-edit__section__data-access{
+
+}
+.page-edit__section__data-access__label{
+	background-color: $color-white;
+	width: 100%;
+	lost-flex-container:row;
+	justify-content:space-between;
+	align-items:center;
+	padding: 1rem;
+
+	> i{
+		color: $scooter;
+	}
+}
+.page-edit__section__data-access__label__text{
+	color: #888;
+}
+.page-edit__section__data-access__form{
+	background-color: $color-white;
+	padding: 1rem;
+	display: none;
+}
+
+
+.page-edit-user-midia{
+	width: 100%;
+	lost-flex-container:row;
+	margin-bottom: 4rem;
+
+	> .user-cover{
+		width: 100%;
+		min-height: 130px;
+		@media (min-width:768px) {
+			lost-column:10/12;
+		}
+	}
+}
+.page-edit-user-midia__avatar{
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto 3rem;
+	@media (min-width:768px) {
+		lost-column:2/12;
+		margin-bottom: 0;
+	}
+
+	> .btn{
+		min-width: 100%;
+	}
+}
+
+.page-edit-user-midia__image{
+	margin: 0 auto 1rem;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 50%;
+
+	> .avatar__upload__input{
+		width: 80px;
+		height: 80px;
+	}
+
+	.slim-btn-remove{
+		display: none;
+	}
+}
+
+.page-edit-address{
+	width: 100%;
+	lost-flex-container:row;
+}
+.page-edit-address__item{
+	width: 100%;
+	background-color: $color-white;
+	padding: 2rem 1rem;
+	margin-bottom: 3rem;
+
+	@media (min-width:560px) {
+        margin-left: 0;
+		lost-column:1/2;
+	}
+}
+.page-edit-address__item--new{
+	lost-flex-container:row;
+	justify-content:center;
+	align-items:center;
+}
+.page-edit-address__item__header{
+	width: 100%;
+	lost-flex-container:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.page-edit-address__item__title{
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 80%;
+	color: #888;
+	font-size: 2rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.page-edit-address__item__action{
+	width: 20%;
+
+	> .icon-edit{color: $scooter; margin-right: 1rem;}
+	> .icon-error{color: #be0000; cursor: pointer;}
+}
+
+.page-edit-address__item__content{
+	color: #888;
+	line-height: 1.2;
+	font-size: 1.6rem;
+}
+
+.page-edit-address__item__form{
+	display: none;
+}
+
+
+[data-form-edit]{
+	cursor: pointer;
+}
+[data-form-edit="close"]{
+	display: block;
+	transform: rotate(90deg);
+	margin-right: 2rem;
+	font-size: 3rem;
+	color: $scooter;
+}

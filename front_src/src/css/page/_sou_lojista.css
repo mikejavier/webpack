@@ -1,0 +1,496 @@
+main, section {
+    color: #767676;
+    font-family: 'Dosis', Helvetica, Arial, sans-serif;
+}
+
+main {
+    position: relative;
+}
+
+.soulojista--blue_text {
+    padding: 0;
+    margin: 0 !important;
+    background-color: transparent;
+    border-bottom-color: transparent;
+    color: #38cacf;
+    font-size: 2rem;
+}
+
+.soulojista--wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.soulojista--banner {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: url($img-path/soulojista--banner--bg.png) left top repeat;
+    
+    /*
+    * IE Fallback
+    */
+    -ms-flex-flow: column;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    
+    .soulojista--banner--title {
+        width: 100%;
+        padding-bottom: 10px;
+        font-family: 'Arista', Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 3.5rem;
+        letter-spacing: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ff508a;
+    }
+    
+    .soulojista--banner--text {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 25%;
+        padding-right: 25%;
+        color: #401053;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .soulojista--banner--arrow {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+    }
+}
+
+.soulojista--start {
+    display: flex;
+    max-height: 350px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px; 
+    flex-flow: row wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+    
+    .soulojista--start--image {
+        width: 212px;
+        height: 212px;
+        margin: 20px;
+        order: 2;
+    }
+    
+    soulojista--start--text {
+        font-size: 2rem;
+        width: 30%;
+    }
+    
+    .left {
+        padding: 0 2.5% 0 0;
+        order: 1;
+        text-align: right;
+    }
+
+    .right {
+        padding: 0 5.5% 0 3.5%;
+        order: 3;
+        text-align: left;
+    }
+    
+    @media (max-width: 820px) {
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+
+        div {
+            text-align: center !important;
+            margin: auto 15px;
+        }
+    }
+}
+
+.soulojista--steps {
+    display: flex;
+    height: 550px;
+    position: relative;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f4f4f4;
+    color: #888888;
+    
+    display: -ms-flexbox;
+    -ms-flex-flow: row nowrap;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    
+    .soulojista--steps--title--wrapper {
+        display: inline-block;
+        width: 35%;
+        min-height: auto !important;
+        margin-left: 0;
+        padding: 30px;
+        position: relative;
+        order: 1;
+        z-index: 0;
+        align-self: center !important;
+        border: 3px solid #ffffff;
+        border-right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        background: #f4f4f4;
+        text-align: left;
+        color: #888888;
+        
+        -ms-flex-order: 1;
+        
+        .title {
+            display: block;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            font-family: 'Arista', Helvetica, Arial, sans-serif;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .text {
+            display: block;
+            margin-right: 20px;
+            font-family: 'Dosis', Helvetica, Arial, sans-serif;
+            font-size: 1.6rem;
+        }
+    }
+    
+    > div {
+        width: 18%;
+        min-height: 450px;
+        margin-left: 20px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 2% 1.5% 0 1.5%;
+        background: #fff4b3;
+        
+        > img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .soulojista--steps--1 {
+        margin-left: 0;
+        order: 2;
+        -ms-flex-order: 2;
+    }
+    .soulojista--steps--2 {
+        order: 3;
+        -ms-flex-order: 3;
+    }
+    .soulojista--steps--3 {
+        order: 4;
+        -ms-flex-order: 4;
+    }
+    
+    @media (max-width: 1000px) {
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 40px;
+        margin-top: 20px;
+
+        -ms-flex-flow: column nowrap;
+        -ms-flex-pack: center;
+        -ms-flex-align: center;
+        
+        > div {
+            width: 75%;
+            margin-left: 0;
+            margin-top: 40px;
+            font-size: 20px;
+            
+            .steps--text {
+                display: block;
+                padding: 40px;
+                margin-top: -10%;
+            }
+        }
+        
+        .soulojista--steps--title--wrapper {
+            width: 75%;
+            border-right: 3px solid #ffffff;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            order: 1;
+            -ms-flex-order: 1;
+        }
+        .soulojista--steps--1 {
+            order: 2;
+            -ms-flex-order: 2;
+        }
+        .soulojista--steps--2 {
+            order: 3;
+            -ms-flex-order: 3;
+        }
+        .soulojista--steps--3 {
+            order: 4;
+            -ms-flex-order: 4;
+        }
+    }
+}
+
+.soulojista--features {
+    display: flex;
+    height: 550px;
+    position: relative;
+    background: url(../../dist/images/soulojista--features--bg.png);
+    color: #bb2b4e;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    display: -ms-flexbox;
+    -ms-flex-flow: row nowrap;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    
+    .soulojista--features--title--wrapper {
+        display: inline-block;
+        width: 35%;
+        min-height: 330px !important;
+        margin-left: 0;
+        padding: 30px;
+        position: relative;
+        order: 4;
+        z-index: 0;
+        align-self: center !important;
+        border: 3px solid #ffffff;
+        border-left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        text-align: left;
+        background: #ffc1d0;
+        opacity: 0.7;
+        
+        -ms-flex-order: 4;
+        
+        .title {
+            display: block;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            font-family: 'Arista', Helvetica, Arial, sans-serif;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+        
+        .text {
+            display: block;
+            margin-right: 20px;
+            font-family: 'Dosis', Helvetica, Arial, sans-serif;
+            font-size: 1.6rem;
+            color: #bb2b4e;
+        }
+    }
+    
+    > div {
+        width: 18%;
+        min-height: 450px;
+        margin-left: 20px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 2% 1.5% 0 1.5%;
+        background: #fff4b3;
+        
+        > img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .soulojista--features--1 {
+        order: 1;
+        -ms-flex-order: 1;
+    }
+    .soulojista--features--2 {
+        order: 2;
+        -ms-flex-order: 2;
+    }
+    .soulojista--features--3 {
+        order: 3;
+        -ms-flex-order: 3;
+    }
+    
+    @media (max-width: 1000px) {
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 40px;
+        margin-top: 20px;
+
+        -ms-flex-flow: column nowrap;
+        -ms-flex-pack: center;
+        -ms-flex-align: center;
+        
+        > div {
+            width: 75%;
+            margin-left: 0;
+            margin-top: 40px;
+            font-size: 20px;
+            
+            .feature--text {
+                display: block;
+                padding: 40px;
+                margin-top: -10%;
+            }
+        }
+        
+        .soulojista--features--title--wrapper {
+            width: 75%;
+            border-left: 3px solid #ffffff;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }   
+    }
+}
+
+.soulojista--video--wrapper {
+    display: flex;
+    height: 540px;
+    position: relative;
+    top: -30px;
+    padding: 70px;
+    flex-flow: row wrap;
+    background: url($img-path/comocomprar--bg_video.png) center top no-repeat;
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+    -ms-flex-pack: center;
+    
+    .btn--grey {
+        width: 200px;
+        line-height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        border-radius: 12px;
+        background-color: #ffffff;
+        border-bottom-color: #767676;
+        color: #888888;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+    
+    #btn--grey--mobile {
+        display: none;
+    }
+    
+    .soulojista--video--title {
+        width: 30%;
+        margin-right: auto;
+        padding-right: 50px;
+        align-self: flex-end;
+        -ms-flex-item-align: end;
+        color: #ffffff;
+        
+        .btn--blue {
+            display: block;
+            width: 200px;
+            line-height: 3rem;
+            background-color: #38cacf;
+            border-bottom-color: #29979b;
+            color: #fff;
+        }
+        
+        > header {
+            margin-bottom: 70%;
+            font-family: "Arista", Helvetica, Arial, sans-serif;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+        
+        > div {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .soulojista--video {
+        width: 65%;
+        height: 100%;
+        align-self: flex-end;
+        -ms-flex-item-align: end;
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    }
+    
+    @media (max-width: 1000px) {
+        top: -15px;
+        padding: 40px 0 0 0;
+        flex-flow: column !important;
+        -ms-flex-flow: column wrap;
+        
+        .soulojista--video--title {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 0px;
+            align-self: center;
+            text-align: center;
+            
+            > header {
+                margin-bottom: 30px;
+            }
+        }
+        
+        .soulojista--video {
+            width: 100%;
+            height: 50%;
+            max-width: 500px;
+            margin-top: 20px;
+            align-self: center;
+            -ms-flex-item-align: center;
+        }
+        
+        .btn--grey {
+            width: 200px;
+            line-height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            background-color: #ffffff;
+            border-bottom-color: #767676;
+            color: #888888;
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+        }
+        
+        #btn--grey--desktop {
+            display: none;
+        }
+        
+        #btn--grey--mobile {
+            display: block;
+        }
+    }
+}

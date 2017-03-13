@@ -1,3 +1,81 @@
-.teste{
-    background-color: #000;
-}
+@import "core/base";
+
+/*Reset and dependencies*/
+/*@import "core/fonts";*/
+@import "core/general";
+
+/*Components*/
+/*@import "components/form";
+@import "components/embed";
+@import "components/title";
+@import "components/historia";
+@import "components/figurinhas";
+@import "components/button";
+@import "components/badge";
+@import "components/slick";
+@import "components/dropdown";
+@import "components/product";
+@import "components/floatingtabs";
+@import "components/tabs/product";
+@import "components/tabs/cart";
+@import "components/amount";
+@import "components/scrollbar";
+@import "components/filter";
+@import "components/tab";
+@import "components/tags";
+@import "components/store";
+@import "components/rating";
+@import "components/ask";
+@import "components/menu";
+@import "components/breadcrumb";
+@import "components/alert";
+@import "components/avatar_selection";
+@import "components/header__dropdown__loggout";
+@import "components/tagging";
+@import "components/error";
+@import "components/table";
+@import "components/text";
+@import "components/tooltip";
+@import "components/status_timeline";
+@import "components/tablink";
+@import "components/loading";
+@import "components/orientation";*/
+
+/*@import "components/buttons";*/
+/*@import "components/progress-bar";
+@import "components/cards";
+@import "components/waves";
+@import "components/timeline";
+@import "components/articles";
+@import "components/dropdown";
+@import "components/labels";
+@import "components/paginator";
+@import "components/tabela";
+@import "components/sprite-generator";
+@import "components/utilidades";*/
+
+/*Pages*/
+/*@import "page/cadastro_criacao";
+@import "page/como_comprar";
+@import "page/como_vender";
+@import "page/landing_poupanca";
+@import "page/sou_lojista";
+@import "page/home";
+@import "page/insidepage";
+@import "page/loja";
+@import "page/produto";
+@import "page/historia";
+@import "page/figura";
+@import "page/mensagens";
+@import "page/edicao";
+@import "page/notification";
+@import "page/poupanca";
+@import "page/landing-larissa";
+
+
+
+@import "template/header";
+@import "template/footer";*/
+
+
+/*@import "backup/style";*/
