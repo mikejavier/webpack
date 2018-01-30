@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Open Sans';
+  src:  url('./OpenSans-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src:  url('./OpenSans-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.hello {
+  color: red;
+  background: url('./stevejobs.jpg');
+  font-family: 'Open Sans', sans-serif;
+}
